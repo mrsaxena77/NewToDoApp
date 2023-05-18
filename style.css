@@ -3,7 +3,7 @@
 }
 
 body {
-    margin:10px;
+    margin: 10px;
     background-color: bisque;
 }
 
@@ -14,12 +14,12 @@ body {
 
 .Input {
     border: 2px solid gray;
-    background-color:beige;
+    background-color: beige;
     margin-right: 5px;
 
 }
 
-.Tasks{
+.Tasks {
     margin-top: 30px;
 }
 
@@ -28,6 +28,3 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(168, 10, 10);
 }
-
-
-
