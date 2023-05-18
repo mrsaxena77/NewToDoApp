@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:10px;
+    background-color: bisque;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+}
+
+.Input {
+    border: 2px solid gray;
+    background-color:beige;
+    margin-right: 5px;
+
+}
+
+.Tasks{
+    margin-top: 30px;
+}
+
+.List {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(168, 10, 10);
+}
+
+
+

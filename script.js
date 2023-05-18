@@ -8,7 +8,6 @@ submitButton.addEventListener("click", function () {
         alert("Please Enter Your Desired Input!");
         return;
     }
-
     else {
         let li = document.createElement("li");
         li.innerHTML = inputVal;
@@ -18,7 +17,5 @@ submitButton.addEventListener("click", function () {
             e.currentTarget.remove();
         });
     }
-
-
     input.value = "";
 });
