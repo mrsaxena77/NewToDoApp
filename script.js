@@ -10,20 +10,29 @@ submitButton.addEventListener("click", function () {
         return;
     }
     else {
+        let li = document.createElement("li");
+        li.innerHTML = inputVal;
         let span = document.createElement("span");
         span.innerHTML = "x";
         list.append(span);
-        let li = document.createElement("li");
-        li.innerHTML = inputVal;
         list.append(li);
         
         span.addEventListener("click", function(e) {
-            e.currentTarget.parentElement.remove();
+            e.currentTarget.remove();
+            li.remove();
         });
 
-        // li.addEventListener("dblclick", function (e) {
-        //     e.currentTarget.remove();
-        // });
+        input.value = "";
     }
-    input.value = "";
+    // storeItems();
 });
+
+function storeItems() {
+    localStorage.setItem("Tasks", list.innerHTML);
+}
+
+function displayItems() {
+    list.innerHTML = localStorage.getItem("Tasks");
+}
+
+// displayItems();
