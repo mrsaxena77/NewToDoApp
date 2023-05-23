@@ -13,9 +13,17 @@ submitButton.addEventListener("click", function () {
         li.innerHTML = inputVal;
         list.append(li);
 
-        li.addEventListener("dblclick", function (e) {
-            e.currentTarget.remove();
-        });
+        let span = document.createElement("span");
+        span.innerHTML = "x";
+        li.append(span);
+
+        span.addEventListener("click", function(e) {
+            e.currentTarget.parentElement.remove();
+        })
+
+        // li.addEventListener("dblclick", function (e) {
+        //     e.currentTarget.remove();
+        // });
     }
     input.value = "";
 });
